@@ -26,5 +26,5 @@ For the backend [Express](https://expressjs.com/de/) is used, which is a minimal
 
 ## Database
 
-For persistence [SQLite3](https://www.sqlite.org/index.html) is used to store the metadata of uploaded files.
+To persists the uploaded data, [SQLite3](https://www.sqlite.org/index.html) is used.
 For an easy interaction between the backend and the database the OR-Mapper [Prisma](https://www.prisma.io/) is used.
