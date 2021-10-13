@@ -78,7 +78,7 @@
 					<td>{meta.mimeType}</td>
 					<td>{meta.createdAt}</td>
 					<td>
-						<a href="/api/uploads/" download={meta.fileName}>
+						<a href="/api/uploads/{meta.fileName}" download={meta.fileName}>
 							<button type="button"> Download </button>
 						</a>
 					</td><td>
