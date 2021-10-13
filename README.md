@@ -2,9 +2,7 @@
 
 This is just a simple demo application to upload some files and re-download them.
 
-# Infos
-
-## Operating Systems
+## Operating System
 
 Runs on any operating system, that is able to install Node.js with its package manager npm.
 
@@ -12,7 +10,7 @@ Runs on any operating system, that is able to install Node.js with its package m
 
 The used languages in this project are JavaScript, HTML and CSS.
 
-## Webframeworks
+## Webframework
 
 The project is seperated in a seperate front- and backend.
 
