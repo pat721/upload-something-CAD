@@ -9,7 +9,7 @@
 	});
 
 	async function simpleFetch() {
-		const response = await fetch("/api/uploads");
+		const response = await fetch("http://localhost:8080/api/uploads");
 		data = await response.json();
 	}
 
@@ -19,7 +19,7 @@
 		formData.append("fileName", fileName.files[0]);
 		formData.append("description", description);
 
-		fetch("/api/uploads", {
+		fetch("http://localhost:8080/api/uploads", {
 			method: "POST",
 			body: formData,
 		})
@@ -32,7 +32,7 @@
 	}
 
 	function deleteUpload(fileName) {
-		fetch("/api/uploads/delete/" + fileName, {
+		fetch("http://localhost:8080/api/uploads/delete/" + fileName, {
 			method: "DELETE",
 		})
 			.then((response) => {
@@ -46,7 +46,7 @@
 
 <main>
 	<h1>Upload Something!</h1>
-	<h2>Upload some files - thats it, nothing more, nothing less.</h2>
+	<h2>Lets you upload some files - thats it, nothing more, nothing less.</h2>
 
 	<input type="file" name="fileName" bind:this={fileName} />
 	<input
@@ -78,7 +78,7 @@
 					<td>{meta.mimeType}</td>
 					<td>{meta.createdAt}</td>
 					<td>
-						<a href="/api/uploads/{meta.fileName}" download={meta.fileName}>
+						<a href="http://localhost:8080/api/uploads/{meta.fileName}" download={meta.fileName}>
 							<button type="button"> Download </button>
 						</a>
 					</td><td>
