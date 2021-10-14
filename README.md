@@ -4,7 +4,7 @@ This is just a simple demo application to upload some files and re-download them
 
 ## Operating System
 
-The Application should be able to run on any operating system, that is able to install [Node.js](https://nodejs.org/en/) with it's package manager "npm".
+The Application should be able to run on any operating system, that is able to install [Node.js](https://nodejs.org/en/) with the package manager "npm".
 
 ## Programming Language
 
