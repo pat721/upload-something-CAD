@@ -14,9 +14,9 @@ The used programming languages in the application are Javascript (ECMA2015), HTM
 
 The application is split into a frontend and a backend. They communicate over a REST API that the backend provides.
 
-The frontend is build on [Svelte](https://svelte.dev), which is a fast modern framework. Which compiles its components to pure javascript code instead of relying on a virtual dom. That brings a high efficiency at runtime.
+The frontend is build on [Svelte](https://svelte.dev), which is a fast modern web framework. Which compiles its components to pure javascript code instead of relying on a virtual dom. That brings a high efficiency at runtime.
 
-The backend is build with [Express](https://expressjs.com/de/), which is a minimal and flexible [Node.js](https://nodejs.org/en/) web application framework that provides a whole set of features for web applications.
+The backend is build with [Express](https://expressjs.com/de/), which is a minimal and flexible [Node.js](https://nodejs.org/en/) web application framework that provides a whole set of features to develop serverside web applications.
 
 ## Runtime Environment
 
