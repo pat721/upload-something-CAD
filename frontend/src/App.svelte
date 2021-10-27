@@ -19,7 +19,7 @@
 		formData.append("fileName", fileName.files[0]);
 		formData.append("description", description);
 
-		fetch("http://localhost:8080/api/uploads", {
+		fetch("/api/uploads", {
 			method: "POST",
 			body: formData,
 		})
@@ -32,7 +32,7 @@
 	}
 
 	function deleteUpload(fileName) {
-		fetch("http://localhost:8080/api/uploads/delete/" + fileName, {
+		fetch("/api/uploads/delete/" + fileName, {
 			method: "DELETE",
 		})
 			.then((response) => {
@@ -76,7 +76,7 @@
 					<td>{meta.mimeType}</td>
 					<td>{meta.createdAt}</td>
 					<td>
-						<a href="http://localhost:8080/api/uploads/{meta.fileName}" download={meta.fileName}>
+						<a href="/api/uploads/{meta.fileName}" download={meta.fileName}>
 							<button type="button"> Download </button>
 						</a>
 					</td><td>
