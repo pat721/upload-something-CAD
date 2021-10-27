@@ -9,7 +9,7 @@
 	});
 
 	async function simpleFetch() {
-		const response = await fetch("http://localhost:8080/api/uploads");
+		const response = await fetch("/api/uploads");
 		data = await response.json();
 	}
 
@@ -59,7 +59,6 @@
 
 	<table class="meta-data">
 		<thead>
-			<th>ID</th>
 			<th>Filename</th>
 			<th>Description</th>
 			<th>Size (in Byte)</th>
@@ -71,7 +70,6 @@
 		{#if data}
 			{#each data as meta}
 				<tr>
-					<td>{meta.id}</td>
 					<td>{meta.fileName}</td>
 					<td>{meta.description}</td>
 					<td>{meta.fileSize}</td>
