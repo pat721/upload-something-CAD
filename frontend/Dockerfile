@@ -1,14 +1,11 @@
 FROM node:17-alpine3.12
 WORKDIR /app
-ADD package*.json ./
-ADD rollup.config.js ./
+
+COPY . ./
 RUN npm install
-
-ADD ./src ./src
-ADD ./public ./public
-RUN npm run-script build
-
+RUN npm run build
 
 EXPOSE 5000
+ENV HOST=0.0.0.0
 
-CMD [ "npm", "start"]
+CMD ["npm", "start"]
