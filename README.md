@@ -1,6 +1,6 @@
 # Simple Upload
 
-This is just a simple demo application to upload some files and re-download them.
+This is just a simple demo application for the "Cloud Application Development" lesson. No design, no overengineering - just a simple application to provide some learning use cases.
 
 ![Overview](assets/screenshot1.png)
 
@@ -12,7 +12,9 @@ The Application should be able to run on any operating system, that is able to i
 
 ### Programming Language
 
-The used programming languages in the application are Javascript (ECMA2015), HTML5 and CSS.
+The used programming language in the application is Javascript (ECMA2015). 
+
+Also there is some HTML and CSS, which are not realy programming languages, but should also be noted.
 
 ### Webframework
 
